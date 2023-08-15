@@ -2,8 +2,9 @@
 
 
 
-$cor2: lightgrey;
+$cor2: 'light'+ grey;
 $background: black;
+$tamanho: '29';
 
 @mixin fundoP($color) {
 
@@ -13,9 +14,23 @@ $background: black;
 
 body {
 
+
     @include fundoP($background);
+
+    @if($background == black) {
+
+        color: #{$cor2};
+        font-size: #{$tamanho + 'px'};
+
+    } @else {
+
+        color: darkblue;
+        background-color: lightblue;
+    }
+
+
     color: $cor2;
-    margin: 10%;
+    margin: 5% * 2;
 
 }
 

@@ -16,6 +16,8 @@ a {
 body {
   background-color: black;
   color: lightgrey;
+  font-size: 29px;
+  color: "lightgrey";
   margin: 10%;
 }
 
